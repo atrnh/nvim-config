@@ -19,13 +19,22 @@ vim.api.nvim_create_autocmd("User", {
     vim.api.nvim_set_hl(0, "@text.reference", { link = "PreProc" })
   end,
 })
+
 vim.api.nvim_create_autocmd("FileType", {
   pattern = { "gitcommit", "markdown", "rst" },
   callback = function()
-    vim.opt_local.tw = 88
+    vim.opt_local.textwidth = 98
     vim.opt_local.wrap = true
     vim.opt_local.linebreak = true
     vim.opt_local.spell = true
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "rst" },
+  callback = function()
+    vim.g.table_mode_corner_corner = "+"
+    vim.g.table_mode_header_fillchar = "="
   end,
 })
 

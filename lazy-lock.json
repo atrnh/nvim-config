@@ -51,5 +51,6 @@
   "vim-rst-sections": { "branch": "master", "commit": "60e3fe72bc5b4e83f2f93860a9effa43827abc4a" },
   "vim-sandwich": { "branch": "master", "commit": "c5a2cc438ce6ea2005c556dc833732aa53cae21a" },
   "vim-startuptime": { "branch": "master", "commit": "6580cf539c33a212f4f5542068a3b4dd2b3ad834" },
+  "vim-table-mode": { "branch": "master", "commit": "9555a3e6e5bcf285ec181b7fc983eea90500feb4" },
   "which-key.nvim": { "branch": "main", "commit": "4b73390eec680b4c061ea175eb32c0ff3412271d" }
 }
