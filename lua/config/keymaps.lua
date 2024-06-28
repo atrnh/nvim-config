@@ -12,8 +12,6 @@ local function map(mode, lhs, rhs, opts)
   end
 end
 
-local vscod
-
 -- function! s:switchEditor(...) abort
 --     let count = a:1
 --     let direction = a:2
@@ -28,7 +26,6 @@ local vscod
 -- endfunction
 
 if vim.g.vscode then
-  local vscode = require("vscode")
   -- .notify(command, args, ...)
 
   local function switchEditor(count, direction)

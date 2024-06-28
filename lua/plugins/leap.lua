@@ -3,6 +3,7 @@
 return {
   {
     "ggandor/leap.nvim",
+    enabled = false, -- disable
     lazy = false,
     keys = {
       { "z", "<Plug>(leap-forward-to)", desc = "Leap forward to", mode = { "n", "x", "o" } },

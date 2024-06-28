@@ -1,7 +1,14 @@
+local colorscheme = "catppuccin"
+if vim.g.vscode then
+  colorscheme = "default"
+end
+
 return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
+    lazy = false,
+    priority = 5000,
     opts = {
       flavour = "mocha",
     },
@@ -9,7 +16,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      colorscheme = colorscheme,
     },
   },
   {
